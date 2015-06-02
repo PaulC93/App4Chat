@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff90ddff"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/To"/>
+
+    <EditText
+        android:id="@+id/ToText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToLabel"
+        android:inputType="textAutoComplete"/>
+
+    <TextView
+        android:id="@+id/MessageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ToText"
+        android:text="@string/Message"/>
+
+    <EditText
+        android:id="@+id/MessageText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MessageLabel"
+        android:layout_above="@+id/btnSend"
+        android:scrollHorizontally="false"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="1"/>
+
+    <TextView
+        android:id="@+id/messageSendingStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/MessageText"
+        android:textColor="#e30000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:text="@string/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff90ddff"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnCheckNewMessage"
+        android:text="@string/CheckNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnNewMessage"
+        android:text="@string/NewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheckNewMessage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="@string/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheckNewMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+<ScrollView
+    android:id="@+id/messagesScroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#B3B3B3"
+    android:layout_below="@+id/btnNewMessage">
+    <LinearLayout
+       android:id="@+id/messagesContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
